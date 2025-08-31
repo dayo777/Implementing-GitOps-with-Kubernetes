@@ -15,6 +15,11 @@ def datetime():
     now = datetime.datetime.now()
     return now.strftime("%Y-%m-%d %H:%M:%S\n")
 
+# this is my added endpoint to simulate developer update functionality
+@app.route('/hi/<name>')
+def hi(name):
+    return 'Hi, {}\n Hope you are doing great.'.format(name)
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
 
