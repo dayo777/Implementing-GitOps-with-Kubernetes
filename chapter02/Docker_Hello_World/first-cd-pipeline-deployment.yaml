@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: first-cd-pipeline
-        image: pietrolibro/hello-world-py-app:2.0
+        image: dayo777/hello-world-py-app:3.0
         ports:
         - containerPort: 80
 ---
@@ -33,4 +33,4 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      nodePort: 30007
+      nodePort: 30009
